@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackspace - Your Personal AI Tutoring Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background (UNCHANGED) -->
+    <div class="animated-background">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-container">
+                    <span class="logo">Blackspace</span>
+                    <div class="logo-dot"></div>
+                </div>
+            </div>
+            <!-- MODIFIED: Navbar right section for Auth -->
+            <div class="nav-right">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#" class="nav-link" id="login-btn">Log In</a>
+                <button class="launch-btn" id="signup-btn">Sign Up with Google</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <svg class="sparkles-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0L9.937 15.5Z"/>
+                </svg>
+                <span>AI-Powered Learning Revolution</span>
+            </div>
+            <h1 class="hero-title">Your personal AI tutoring assistant.</h1>
+            <p class="hero-subtitle">
+                Transform your course materials—notes, slides, and textbooks—into engaging presentations, interactive
+                flashcards, and concise study guides instantly.
+            </p>
+            <!-- MODIFIED: Button text and ID for waitlist modal -->
+            <button class="cta-btn" id="open-waitlist-btn">
+                <span>Join the Waitlist</span>
+                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14"/>
+                    <path d="m12 5 7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- How it Works Section (UNCHANGED) -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">A smarter way to study in 3 simple steps.</h2>
+            <div class="steps-grid">
+                <div class="step-card step-1">
+                    <div class="step-content">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <h3>Upload Anything</h3>
+                        <p>Drop your PDFs, notes, slides, or textbooks. Our AI processes any format instantly.</p>
+                    </div>
+                </div>
+                <div class="step-card step-2">
+                    <div class="step-content">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>Choose Your Tool</h3>
+                        <p>Select from presentations, flashcards, or study guides based on your learning style.</p>
+                    </div>
+                </div>
+                <div class="step-card step-3">
+                    <div class="step-content">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                            </svg>
+                        </div>
+                        <h3>Study Smarter</h3>
+                        <p>Engage with AI-generated content tailored to help you master concepts, not memorize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (UNCHANGED) -->
+    <section id="features" class="features">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <div class="feature-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21 5,3"/>
+                        </svg>
+                        <span>Audio Learning</span>
+                    </div>
+                    <h3 class="feature-title">Never just read again. Listen.</h3>
+                    <p class="feature-description">
+                        Transform your study materials into engaging audio content. Listen while commuting, exercising, or
+                        whenever reading isn't convenient. Our AI creates natural-sounding narrations that make complex concepts
+                        easy to understand.
+                    </p>
+                    <button class="feature-btn feature-btn-orange">Try Audio Learning</button>
+                </div>
+                <div class="feature-visual">
+                    <div class="audio-player-mockup">
+                        <div class="play-button">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5,3 19,12 5,21 5,3"/>
+                            </svg>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="progress-bar active"></div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <p class="mockup-label">Audio Player Interface</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row feature-reverse">
+                <div class="feature-visual">
+                    <div class="flashcards-mockup">
+                        <div class="flashcard-grid">
+                            <div class="flashcard flashcard-1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="flashcard flashcard-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                            </div>
+                            <div class="flashcard flashcard-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div class="flashcard flashcard-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="mockup-label">Interactive Flashcards</p>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-badge feature-badge-cyan">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                        </svg>
+                        <span>Interactive Learning</span>
+                    </div>
+                    <h3 class="feature-title feature-title-cyan">Master concepts, don't just memorize. Interact.</h3>
+                    <p class="feature-description">
+                        Our intelligent flashcards adapt to your learning pace. Get instant feedback, track your progress, and
+                        focus on areas that need improvement. Turn passive reading into active learning.
+                    </p>
+                    <button class="feature-btn feature-btn-cyan">Create Flashcards</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (UNCHANGED) -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title testimonials-title">Why students love Blackspace</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card testimonial-1">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "Blackspace completely transformed how I study. I went from struggling with dense textbooks to
+                            actually enjoying my study sessions. The audio feature is a game-changer!"
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Sarah Chen</p>
+                            <p class="author-role">Computer Science Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card testimonial-2">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "The flashcards are incredibly smart. They focus on exactly what I need to review. My exam scores have
+                            improved dramatically since I started using Blackspace."
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Marcus Johnson</p>
+                            <p class="author-role">Medical Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card testimonial-3">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "As someone who learns better through interaction, Blackspace is perfect. It turns boring PDFs into
+                            engaging study materials that actually stick."
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Emily Rodriguez</p>
+                            <p class="author-role">Business Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (UNCHANGED) -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 <span class="footer-brand">Blackspace</span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- NEW: Waitlist Modal HTML -->
+    <div id="waitlist-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-modal-btn" class="close-button">×</span>
+            <h2 class="section-title">Join the Waitlist</h2>
+            <p class="hero-subtitle" style="margin-bottom: 2rem;">Be the first to know when Blackspace is available. No spam, we promise.</p>
+          <form id="waitlist-form" class="waitlist-form" name="waitlist" data-netlify="true"></form>
+                <input type="email" id="waitlist-email" class="waitlist-input" placeholder="Enter your email address" required>
+                <button type="submit" class="cta-btn">
+                    <span>Join Now</span>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </button>
+            </form>
+            <div id="waitlist-message"></div>
+        </div>
+    </div>
+        <!-- ... a lot of your page content ... -->
+    
+    <!-- NEW: Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
