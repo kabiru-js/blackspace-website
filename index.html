@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated Background (UNCHANGED) -->
+    <!-- Animated Background -->
     <div class="animated-background">
         <div class="bg-orb orb-1"></div>
         <div class="bg-orb orb-2"></div>
@@ -24,7 +24,6 @@
                     <div class="logo-dot"></div>
                 </div>
             </div>
-            <!-- MODIFIED: Navbar right section for Auth -->
             <div class="nav-right">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#testimonials" class="nav-link">Testimonials</a>
@@ -53,7 +52,6 @@
                 Transform your course materials—notes, slides, and textbooks—into engaging presentations, interactive
                 flashcards, and concise study guides instantly.
             </p>
-            <!-- MODIFIED: Button text and ID for waitlist modal -->
             <button class="cta-btn" id="open-waitlist-btn">
                 <span>Join the Waitlist</span>
                 <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -64,7 +62,7 @@
         </div>
     </section>
 
-    <!-- How it Works Section (UNCHANGED) -->
+    <!-- How it Works Section -->
     <section class="how-it-works">
         <div class="container">
             <h2 class="section-title">A smarter way to study in 3 simple steps.</h2>
@@ -115,7 +113,7 @@
         </div>
     </section>
 
-    <!-- Features Section (UNCHANGED) -->
+    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
             <!-- Feature 1 -->
@@ -202,7 +200,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section (UNCHANGED) -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="section-title testimonials-title">Why students love Blackspace</h2>
@@ -210,130 +208,75 @@
                 <div class="testimonial-card testimonial-1">
                     <div class="testimonial-content">
                         <div class="stars">
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
                         </div>
-                        <p class="testimonial-text">
-                            "Blackspace completely transformed how I study. I went from struggling with dense textbooks to
-                            actually enjoying my study sessions. The audio feature is a game-changer!"
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Sarah Chen</p>
-                            <p class="author-role">Computer Science Student</p>
-                        </div>
+                        <p class="testimonial-text">"Blackspace completely transformed how I study. I went from struggling with dense textbooks to actually enjoying my study sessions. The audio feature is a game-changer!"</p>
+                        <div class="testimonial-author"><p class="author-name">Sarah Chen</p><p class="author-role">Computer Science Student</p></div>
                     </div>
                 </div>
-
                 <div class="testimonial-card testimonial-2">
                     <div class="testimonial-content">
                         <div class="stars">
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
                         </div>
-                        <p class="testimonial-text">
-                            "The flashcards are incredibly smart. They focus on exactly what I need to review. My exam scores have
-                            improved dramatically since I started using Blackspace."
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Marcus Johnson</p>
-                            <p class="author-role">Medical Student</p>
-                        </div>
+                        <p class="testimonial-text">"The flashcards are incredibly smart. They focus on exactly what I need to review. My exam scores have improved dramatically since I started using Blackspace."</p>
+                        <div class="testimonial-author"><p class="author-name">Marcus Johnson</p><p class="author-role">Medical Student</p></div>
                     </div>
                 </div>
-
                 <div class="testimonial-card testimonial-3">
                     <div class="testimonial-content">
                         <div class="stars">
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
-                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
-                            </svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
+                            <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/></svg>
                         </div>
-                        <p class="testimonial-text">
-                            "As someone who learns better through interaction, Blackspace is perfect. It turns boring PDFs into
-                            engaging study materials that actually stick."
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Emily Rodriguez</p>
-                            <p class="author-role">Business Student</p>
-                        </div>
+                        <p class="testimonial-text">"As someone who learns better through interaction, Blackspace is perfect. It turns boring PDFs into engaging study materials that actually stick."</p>
+                        <div class="testimonial-author"><p class="author-name">Emily Rodriguez</p><p class="author-role">Business Student</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (UNCHANGED) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">
-                © 2024 <span class="footer-brand">Blackspace</span>. All rights reserved.
-            </p>
+            <p class="footer-text">© 2024 <span class="footer-brand">Blackspace</span>. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- NEW: Waitlist Modal HTML -->
+    <!-- Waitlist Modal -->
     <div id="waitlist-modal" class="modal-overlay">
         <div class="modal-content">
             <span id="close-modal-btn" class="close-button">×</span>
             <h2 class="section-title">Join the Waitlist</h2>
             <p class="hero-subtitle" style="margin-bottom: 2rem;">Be the first to know when Blackspace is available. No spam, we promise.</p>
-          <form id="waitlist-form" class="waitlist-form" name="waitlist" data-netlify="true"></form>
+            <form id="waitlist-form" class="waitlist-form">
                 <input type="email" id="waitlist-email" class="waitlist-input" placeholder="Enter your email address" required>
                 <button type="submit" class="cta-btn">
                     <span>Join Now</span>
-                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
-                    </svg>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </button>
             </form>
             <div id="waitlist-message"></div>
         </div>
     </div>
-        <!-- ... a lot of your page content ... -->
     
-    <!-- NEW: Add Firebase SDKs -->
+    <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    
+    <!-- Your Script (with defer attribute) -->
     <script src="script.js" defer></script>
-    <script src="script.js"></script>
 </body>
 </html>
